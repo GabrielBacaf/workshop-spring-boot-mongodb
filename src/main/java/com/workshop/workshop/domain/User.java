@@ -19,7 +19,9 @@ public class User implements Serializable {
     private String name;
     private String email;
 
+
     public User() {
+
 
 
     }
@@ -29,16 +31,18 @@ public class User implements Serializable {
         this.name = name;
         this.email = email;
 
+
     }
 
 
-    List<Post> Userposts = new ArrayList<Post>();
 
-    List<Comment> UserComment = new ArrayList<Comment>();
+
+
 
     public String getId() {
         return id;
     }
+
     public void setId(String id) {
         this.id = id;
     }
@@ -51,13 +55,14 @@ public class User implements Serializable {
         return email;
     }
 
-    public List<Post> getUserposts() {
-        return Userposts;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public List<Comment> getUserComments() {
-        return UserComment;
+    public void setName(String name) {
+        this.name = name;
     }
+
 
     @Override
     public boolean equals(Object o) {
